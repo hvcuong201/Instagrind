@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Instagrind</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">xkLpIdBe1JOZFkmDN3rSJAVsFQALeOglBfJD1RZD</string>
+    <string name="back4app_client_key">HsaPag8YJUIKFjlAMEE6RU1CD2syb3OEkX0XQvYm</string>
+</resources>
