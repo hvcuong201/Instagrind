@@ -10,9 +10,16 @@ import android.widget.Toast
 import com.parse.ParseUser
 
 class LoginActivity : AppCompatActivity() {
+    private val currentUser = ParseUser.getCurrentUser()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        // The current signed in user is persisted across app restarts
+        if (currentUser != null) {
+            goToMainActivity()
+        }
 
         findViewById<Button>(R.id.loginBtn).setOnClickListener {
             val username = findViewById<EditText>(R.id.etUsername).text.toString()
